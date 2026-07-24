@@ -1,7 +1,30 @@
 aid: bouffalolab
-name: bouffalolab
-description: bouffalolab is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bouffalolab.png
+name: Bouffalo Lab
+description: >-
+  Bouffalo Lab (博流智能) is a fabless chip design company founded in 2016 and headquartered
+  in Nanjing, China, focused on ultra-low-power AIoT (AI + IoT) and edge-computing system
+  chips. Its product line centers on RISC-V based microcontrollers with integrated wireless
+  connectivity — the BL602/BL604 (Wi-Fi 2.4G + BLE 5.0), BL702/BL704/BL706 (Zigbee 3.0 +
+  BLE 5.0), BL606P (quad-mode dual-core Wi-Fi/BT/BLE/Zigbee), and the BL616/BL618 and BL808
+  families — combining wireless radios, audio/video processing, and on-device AI algorithms.
+  The company ships the open-source BouffaloSDK (a merge of bl_mcu_sdk and bl_iot_sdk) under
+  Apache 2.0 through its public GitHub organization, along with hardware abstraction drivers,
+  Matter/Thread support, and NuttX RTOS ports. Bouffalo Lab is a hardware/firmware provider
+  rather than a web-API provider; it exposes no public HTTP/REST developer API, so the
+  enrichment pipeline captures its developer surface (GitHub SDK org) and domain security
+  posture. It is a portfolio company of Qiming Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/bouffalolab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,20 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Semiconductors
+- RISC-V
+- Microcontrollers
+- IoT
+- AIoT
+- Wireless
+- Wi-Fi
+- Bluetooth
+- Zigbee
+- Edge Computing
+- Firmware SDK
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +57,15 @@ maintainers:
 common:
 - type: Website
   url: https://bouffalolab.com
+- type: GitHubOrganization
+  url: https://github.com/bouffalolab
+- type: SourceCode
+  name: BouffaloSDK (bl_mcu_sdk + bl_iot_sdk)
+  url: https://github.com/bouffalolab/bouffalo_sdk
+- type: DomainSecurity
+  url: security/bouffalolab-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
